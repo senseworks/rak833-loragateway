@@ -53,7 +53,7 @@ ldconfig
 popd
 
 # Install LoRaWAN packet forwarder repositories
-INSTALL_DIR="/opt/semtech-gateway"
+INSTALL_DIR="/opt/semtech"
 if [ ! -d "$INSTALL_DIR" ]; then mkdir $INSTALL_DIR; fi
 pushd $INSTALL_DIR
 
