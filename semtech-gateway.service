@@ -1,0 +1,12 @@
+[Unit]
+Description=Semtech LoRa packet forwarder
+
+[Service]
+WorkingDirectory=/opt/semtech/packet_forwarder/lora_pkt_fwd/
+ExecStart=/opt/semtech/packet_forwarder/lora_pkt_fwd/lora_pkt_fwd
+SyslogIdentifier=semtech-gateway
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
