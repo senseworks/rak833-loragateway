@@ -106,7 +106,7 @@ echo "Installation completed."
 
 # Start packet forwarder as a service
 mkdir $INSTALL_DIR/bin/
-cp ./start.sh $INSTALL_DIR/bin/
+cp $SCRIPT_DIR/start.sh $INSTALL_DIR/bin/
 cp $SCRIPT_DIR/semtech-gateway.service /lib/systemd/system/
 systemctl enable semtech-gateway.service
 
