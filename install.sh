@@ -75,7 +75,7 @@ cp $SCRIPT_DIR/Makefile-tx-test ./util_tx_test/Makefile
 cp $SCRIPT_DIR/library.cfg ./libloragw/
 cp $SCRIPT_DIR/Makefile-gw ./Makefile
 
-sed -i -e 's/CFG_SPI= native/CFG_SPI= ftdi/g' ./libloragw/library.cfg
+#sed -i -e 's/CFG_SPI= native/CFG_SPI= ftdi/g' ./libloragw/library.cfg
 
 make
 popd
@@ -107,6 +107,7 @@ echo "Installation completed."
 # Start packet forwarder as a service
 mkdir $INSTALL_DIR/bin/
 cp $SCRIPT_DIR/start.sh $INSTALL_DIR/bin/
+chmod 755 $INSTALL_DIR/bin/start.sh
 cp $SCRIPT_DIR/semtech-gateway.service /lib/systemd/system/
 systemctl enable semtech-gateway.service
 
