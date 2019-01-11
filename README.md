@@ -17,6 +17,7 @@ For Semtech gateway packet forwarder:
       $ sudo ./install.sh
 
 For TTN packet forwarder:
+
       $ git clone https://github.com/senseworks/rak833-loragateway.git ~/rak833-loragateway
       $ cd ~/rak833-loragateway
       $ sudo ./ttn_install.sh
