@@ -105,6 +105,7 @@ echo
 echo "Installation completed."
 
 # Start packet forwarder as a service
+mkdir $INSTALL_DIR/bin/
 cp ./ttnstart.sh $INSTALL_DIR/bin/
 cp $SCRIPT_DIR/ttn-gateway.service /lib/systemd/system/
 systemctl enable ttn-gateway.service
