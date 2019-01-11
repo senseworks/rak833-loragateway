@@ -10,7 +10,7 @@ step1 : Download and install [Raspbian Stretch LITE](https://www.raspberrypi.org
 
 step2 : Clone the installer and start the installation
 
-      $ git clone https://github.com/RAKWireless/RAK833-LoRaGateway-RPi.git ~/rak833-loragateway
+      $ git clone https://github.com/senseworks/rak833-loragateway.git ~/rak833-loragateway
       $ cd ~/rak833-loragateway
       $ sudo ./install.sh
 
